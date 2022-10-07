@@ -1,0 +1,19 @@
+public class MyFarm {
+    public static void main(String[]args){
+        FarmAnimal[] Animals=new FarmAnimal[6];
+        Animals[0]= new Duck ("Donald", "male", 3.2,5," Quack Quack ");
+        Animals[1]= new Duck ("Cheese","female",3.6,5, " Quack Quack ");
+        Animals[2]= new Cow ("Molly", "female",1600,3," Moo Moo ");
+        Animals[3]= new Chicken ("Albert","male",1.6,2," Cock a doodle-doo ");
+        Animals[4]= new Chicken ("Amelia","female",1.8,4," Cluck Cluck ");
+        Animals[5]= new Chicken ("Dixie","female",1.7,4," Cluck Cluck ");
+        for(FarmAnimal animal: Animals) {
+            System.out.println(animal.toString());
+        }
+        for(FarmAnimal animal: Animals){
+            System.out.println(animal.feedLoadingSchedule());
+
+        }
+
+    }
+}
