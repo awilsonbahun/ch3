@@ -1,0 +1,13 @@
+public class MainFlight {
+    public static void main(String[] args){
+        Airplane a=new Airplane("Boeing 747",2016);
+        Bird b= new Bird("Eagle");
+        Bird b1 =new Bird("Hummingbird");
+        Flight[] f={a,b,b1};
+        for(Flight flight:f){
+            System.out.println(flight+":");
+            flight.fly();
+        }
+        System.out.println();
+    }
+}
